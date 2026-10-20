@@ -21,7 +21,7 @@ body {
             position: absolute;
             left: 50%;
             bottom: 7%;
-            width: min(76vw, 620px);
+            width: min(88vw, 700px);
             aspect-ratio: 2 / 1;
             transform: translateX(-50%);
         }
@@ -36,12 +36,12 @@ body {
         }
 
         .red { width: 100%; background: #ff3131; }
-        .orange { width: 92%; height: 92%; background: #ff751f; }
-        .yellow { width: 82%; height: 82%; background:#ffde59; }
-        .green { width: 72%; height: 72%; background: #7ed957; }
-        .blue { width: 62%; height: 62%; background: #38b6ff; }
-        .purple { width: 52%; height: 52%; background: #8c52ff; }
-       .inside { width: 42%; height: 42%; background: linear-gradient(#91b1fc, #def4ff); }
+        .orange { width: 96%; height: 96%; background: #ff751f; }
+        .yellow { width: 92%; height: 92%; background:#ffde59; }
+        .green { width: 88%; height: 88%; background: #7ed957; }
+        .blue { width: 84%; height: 84%; background: #38b6ff; }
+        .purple { width: 80%; height: 80%; background: #8c52ff; }
+           .inside { width: 76%; height: 76%; background: linear-gradient(#91b1fc, #def4ff); }
 
         .cloud {
             position: absolute;
