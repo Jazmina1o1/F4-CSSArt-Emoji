@@ -6,7 +6,7 @@ body {
             display: grid;
             place-items: center;
             overflow: hidden;
-            background: linear-gradient(#6eb6da, #e8f8ff);
+            background: linear-gradient(#91b1fc, #def4ff);
             font-family: system-ui, sans-serif;
         }
 
@@ -15,16 +15,6 @@ body {
             width: min(100%, 800px);
             height: min(70vh, 500px);
             min-height: 320px;
-        }
-
-        h1 {
-            margin: 0;
-            position: absolute;
-            top: 8%;
-            width: 100%;
-            color: #36799b;
-            text-align: center;
-            font-size: clamp(1.5rem, 5vw, 2.5rem);
         }
 
         .rainbow {
@@ -45,13 +35,13 @@ body {
             border-radius: 50% 50% 0 0 / 100% 100% 0 0;
         }
 
-        .red { width: 100%; background: #fc4f5a; }
-        .orange { width: 86%; height: 86%; background: #fca542; }
-        .yellow { width: 72%; height: 72%; background: #fad955; }
-        .green { width: 58%; height: 58%; background: #3fd47b; }
-        .blue { width: 44%; height: 44%; background: #40bdf3; }
-        .purple { width: 30%; height: 30%; background: #945cee; }
-        .inside { width: 16%; height: 16%; background: #e8f8ff; }
+        .red { width: 100%; background: #ff3131; }
+        .orange { width: 92%; height: 92%; background: #ff751f; }
+        .yellow { width: 82%; height: 82%; background:#ffde59; }
+        .green { width: 72%; height: 72%; background: #7ed957; }
+        .blue { width: 62%; height: 62%; background: #38b6ff; }
+        .purple { width: 52%; height: 52%; background: #8c52ff; }
+        .inside { width: 42%; height: 42%; background: linear-gradient(#91b1fc, #def4ff); }
 
         .cloud {
             position: absolute;
@@ -75,11 +65,3 @@ body {
         .cloud::after { width: 56px; height: 56px; right: 18px; bottom: 10px; }
         .left { left: 3%; }
         .right { right: 3%; }
-
-        @media (max-width: 500px) {
-            .cloud { width: 120px; height: 40px; bottom: 5%; }
-            .cloud::before { width: 52px; height: 52px; left: 18px; bottom: 12px; }
-            .cloud::after { width: 42px; height: 42px; right: 12px; bottom: 8px; }
-            .left { left: -3%; }
-            .right { right: -3%; }
-        }
