@@ -41,7 +41,7 @@ body {
         .green { width: 72%; height: 72%; background: #7ed957; }
         .blue { width: 62%; height: 62%; background: #38b6ff; }
         .purple { width: 52%; height: 52%; background: #8c52ff; }
-o        .inside { width: 42%; height: 42%; background: linear-gradient(#91b1fc, #def4ff); }
+       .inside { width: 42%; height: 42%; background: linear-gradient(#91b1fc, #def4ff); }
 
         .cloud {
             position: absolute;
