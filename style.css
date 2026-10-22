@@ -89,9 +89,9 @@ z-index: 3;
  190px 75px 0 -2px white, 210px 63px 0 1px white,
   -210px 120px 0 -2px white, -190px 108px 0 1px white;
   filter: drop-shadow(0 5px 4px rgba(36, 75, 92, 0.15));
-        }
+   }
 
-  .scene::before { top: 65%; left: -38%; }
+  .scene::before { top: 65%; left: -39%; }
 .scene::after { top: 0%; right: -27%; transform: scale(.8); }
 
 
