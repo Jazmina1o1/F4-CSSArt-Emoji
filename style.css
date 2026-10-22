@@ -1,35 +1,35 @@
 body {
-  min-height: 100vh;
-  margin: 0;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  background: linear-gradient(#91b1fc, #def4ff);
-  font-family: system-ui, sans-serif;
+ min-height: 100vh;
+ margin: 0;
+ display: grid;
+place-items: center;
+ overflow: hidden;
+background: linear-gradient(#91b1fc, #def4ff);
+font-family: system-ui, sans-serif;
 }
 
 .scene {
-  position: relative;
-  width: min(100%, 800px);
-  height: min(70vh, 500px);
-  min-height: 320px;
+ position: relative;
+ width: min(100%, 800px);
+height: min(70vh, 500px);
+min-height: 320px;
 }
 
 .rainbow {
-  position: absolute;
-  left: 50%;
-  bottom: 7%;
-  width: min(88vw, 700px);
-  aspect-ratio: 2 / 1;
+position: absolute;
+left: 50%;
+ bottom: 7%;
+ width: min(88vw, 700px);
+ aspect-ratio: 2 / 1;
   transform: translateX(-50%);
 }
 
 .arc {
   position: absolute;
-  left: 50%;
-  bottom: 0;
-  height: 100%;
-  transform: translateX(-50%);
+ left: 50%;
+ bottom: 0;
+ height: 100%;
+ transform: translateX(-50%);
   border-radius: 50% 50% 0% 0 / 100% 100% 0 0;
 }
 
@@ -43,20 +43,20 @@ body {
 .inside { width: 72%; height: 72%; background: linear-gradient(#91b1fc, #def4ff); }
 
 .cloud {
-  position: absolute;
-  z-index: 1;
-  bottom: 6%;
+position: absolute;
+z-index: 1;
+ bottom: 6%;
   width: 170px;
-  height: 50px;
-  border-radius: 30px;
+height: 50px;
+border-radius: 30px;
   background:white;
   filter: drop-shadow(0 5px 4px rgba(55, 121, 150, 0.15));
   }
 
 .cloud::before, .cloud::after {
-  position: absolute;
-  content: "";
-  border-radius: 50%;
+position: absolute;
+content: "";
+ border-radius: 50%;
   background:white;
 }
 
