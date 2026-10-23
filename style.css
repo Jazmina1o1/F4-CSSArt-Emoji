@@ -41,7 +41,7 @@ body {
 .blue { width: 84%; height: 84%; background: #38b6ff; }
 .indigo { width: 80%; height: 80%; background: #150aaf; }
 .purple { width: 76%; height: 76%; background: #8c52ff; }
-.inside { width: 72%; height: 72%; background: linear-gradient(#D4F4FE, #E0F8FF); }
+.inside { width: 72%; height: 72%; background: linear-gradient(#D4F4FE, #E7FAFF); }
 
 /* Clouds and sun */
 .cloud {
@@ -95,5 +95,4 @@ z-index: 3;
 
   .scene::before { top: 65%; left: -39%; }
 .scene::after { top: 0%; right: -27%; transform: scale(.8); }
-
 
