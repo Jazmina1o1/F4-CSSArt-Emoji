@@ -6,24 +6,56 @@
  <title>Rainbow Sky</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="min-height: 200vh; overflow-y: auto;">
+
    <div class="scene" role="group" aria-label="A rainbow with clouds on either side">
-    <div class="rainbow" aria-hidden="true">
-        <div class="arc red"></div>
-        <div class="arc orange"></div>  
-        <div class="arc yellow"></div>
-        <div class="arc green"></div>
-        <div class="arc blue"></div>
-        <div class="arc indigo"></div>
-        <div class="arc purple"></div>
-        <div class="arc inside"></div>
+       <div class="box">
+      <table role="presentation">
+      <tbody>
+       <tr>
+     <td><div class="cloud left" aria-hidden="true"></div></td>
+    <td>
+<div class="rainbow" aria-hidden="true">
+<div class="arc red"></div> 
+<div class="arc orange"></div>
+ <div class="arc yellow"></div>
+<div class="arc green"></div>
+<div class="arc blue"></div>
+<div class="arc indigo"></div>
+ <div class="arc purple"></div>
+ <div class="arc inside"></div>
+  </div>
+</td>
+  <td><div class="cloud right" aria-hidden="true"></div></td>
+</tr>
+</tbody>
+    </table>
     </div>
-    <div class="cloud left" aria-hidden="true"></div>
-    <div class="cloud right" aria-hidden="true"></div>
-    </div> 
-
-
- 
-  
+  </div>  
+   <div class="scene" role="group" aria-label="A rainbow with clouds on either side">
+       <div class="box">
+      <table role="presentation">
+      <tbody>
+      <tr>
+      <td><div class="cloud left" aria-hidden="true"></div></td>
+    <td>
+<div class="rainbow" aria-hidden="true">
+<div class="arc red"></div>
+<div class="arc orange"></div>
+ <div class="arc yellow"></div>
+<div class="arc green"></div>
+<div class="arc blue"></div>
+<div class="arc indigo"></div>
+ <div class="arc purple"></div>
+ <div class="arc inside"></div>
+ <div class="body::before"></div> 
+  </div>
+</td>
+  <td><div class="cloud right" aria-hidden="true"></div></td>
+</tr>
+</tbody>
+    </table>
+    </div>
+  </div>
 </body>
 </html>

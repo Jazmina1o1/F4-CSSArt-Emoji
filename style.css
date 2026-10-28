@@ -7,6 +7,7 @@ body {
   background: linear-gradient(#ADE9FF, #F4FEFF);
 }
 
+
 .scene {
   position: relative;
   width: min(100%, 800px);
@@ -34,14 +35,14 @@ body {
   border-radius: 50% 50% 0% 0 / 100% 100% 0 0;
 }
 
-.red { width: 100%; background: #ff3131; }
-.orange { width: 96%; height: 96%; background: #ff751f; }
-.yellow { width: 92%; height: 92%; background:#ffde59; }
-.green { width: 88%; height: 88%; background: #7ed957; }
-.blue { width: 84%; height: 84%; background: #38b6ff; }
-.indigo { width: 80%; height: 80%; background: #150aaf; }
-.purple { width: 76%; height: 76%; background: #8c52ff; }
-.inside { width: 72%; height: 72%; background: linear-gradient(#D4F4FE, #E7FAFF); }
+.red { width: 100%; background: transparent; border: 15px solid #ff3b30; border-bottom: 0; box-sizing: border-box; }
+.orange { width: 96%; height: 96%; background: transparent; border: 15px solid #ff9500; border-bottom: 0; box-sizing: border-box; }
+.yellow { width: 92%; height: 92%; background: transparent; border: 15px solid #ffd60a; border-bottom: 0; box-sizing: border-box; }
+.green { width: 88%; height: 88%; background: transparent; border: 15px solid #34c759; border-bottom: 0; box-sizing: border-box; }
+.blue { width: 84%; height: 84%; background: transparent; border: 15px solid #0a84ff; border-bottom: 0; box-sizing: border-box; }
+.indigo { width: 80%; height: 80%; background: transparent; border: 15px solid #5e5ce6; border-bottom: 0; box-sizing: border-box; }
+.purple { width: 76%; height: 76%; background: transparent; border: 15px solid #bf5af2; border-bottom: 0; box-sizing: border-box; }
+
 
 /* Clouds and sun */
 .cloud {
