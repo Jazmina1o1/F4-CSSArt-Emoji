@@ -168,6 +168,7 @@ content: "";
   transform: translate(-50%, -12px);
   filter: brightness(0.75) drop-shadow(0 0 8px rgba(170, 190, 255, 0.25));
 }
+
 .night-scene:hover .red { border-color: #a93442; }
 .night-scene:hover .orange { border-color: #a85d26; }
 .night-scene:hover .yellow { border-color: #a18d36; }
