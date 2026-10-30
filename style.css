@@ -120,3 +120,46 @@ content: "";
   right: 10%;
   transform: scale(.8);
 }
+  /* Night scene transitions */
+.night-scene .scene-background {
+  transition: background 0.6s ease;
+}
+
+.night-scene .rainbow {
+  transition: filter 0.6s ease;
+}
+
+.night-scene .sun {
+  transition: background 0.6s ease, box-shadow 0.6s ease;
+}
+
+.night-scene .sun::after {
+  position: absolute;
+  top: -8%;
+  right: -12%;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  background: #111a36;
+  content: "";
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.night-scene:hover .scene-background {
+  background: linear-gradient(#111a36, #202c52);
+}
+
+.night-scene:hover .rainbow {
+  filter: brightness(0.5);
+  transition: filter 0.6s ease;
+}
+
+.night-scene:hover .sun {
+  background: #fff4c2;
+  box-shadow: 0 0 28px rgba(255, 244, 194, 0.45);
+}
+
+.night-scene:hover .sun::after {
+  opacity: 1;
+}
