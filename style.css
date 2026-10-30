@@ -126,7 +126,21 @@ content: "";
 }
 
 .night-scene .rainbow {
-  transition: filter 0.6s ease;
+  transition: filter 0.6s ease, transform 0.6s ease;
+}
+
+.night-scene .arc {
+  transition: border-color 0.6s ease;
+}
+
+.night-scene .cloud,
+.night-scene .cloud::before,
+.night-scene .cloud::after {
+  transition: background-color 0.6s ease, filter 0.6s ease;
+}
+
+.night-scene .distant-cloud {
+  transition: background-color 0.6s ease, box-shadow 0.6s ease, filter 0.6s ease;
 }
 
 .night-scene .sun {
@@ -151,8 +165,31 @@ content: "";
 }
 
 .night-scene:hover .rainbow {
-  filter: brightness(0.5);
-  transition: filter 0.6s ease;
+  transform: translate(-50%, -12px);
+  filter: brightness(0.75) drop-shadow(0 0 8px rgba(170, 190, 255, 0.25));
+}
+.night-scene:hover .red { border-color: #a93442; }
+.night-scene:hover .orange { border-color: #a85d26; }
+.night-scene:hover .yellow { border-color: #a18d36; }
+.night-scene:hover .green { border-color: #34764e; }
+.night-scene:hover .blue { border-color: #28679f; }
+.night-scene:hover .indigo { border-color: #4b4c91; }
+.night-scene:hover .purple { border-color: #784b91; }
+
+.night-scene:hover .cloud,
+.night-scene:hover .cloud::before,
+.night-scene:hover .cloud::after {
+  background: #59627c;
+}
+
+.night-scene:hover .cloud {
+  filter: drop-shadow(0 5px 5px rgba(5, 10, 28, 0.45));
+}
+
+.night-scene:hover .distant-cloud {
+  background: #414b68;
+  box-shadow: 19px -12px 0 -3px #414b68, 43px -5px 0 2px #414b68;
+  filter: drop-shadow(0 5px 4px rgba(5, 10, 28, 0.35));
 }
 
 .night-scene:hover .sun {
