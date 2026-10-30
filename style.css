@@ -201,3 +201,95 @@ content: "";
 .night-scene:hover .sun::after {
   opacity: 1;
 }
+
+/* Animated day and night scene */
+.animated-scene .scene-background {
+  background: linear-gradient(#87ceeb, #d9efff);
+}
+
+.animated-scene .scene-background::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(#101a3c, #293e70);
+  content: "";
+  opacity: 0;
+  animation: night-sky 18s linear infinite;
+}
+
+.animated-scene .sun {
+  top: 0;
+  left: -20%;
+  opacity: 0;
+  animation: sun-journey 18s linear infinite;
+}
+
+.moon {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: -20%;
+  width: clamp(68px, 14vw, 120px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #f5f0cf;
+  box-shadow: 0 0 28px rgba(245, 240, 207, 0.45);
+  opacity: 0;
+  animation: moon-journey 18s linear infinite;
+}
+
+.moon::after {
+  position: absolute;
+  top: -5%;
+  right: -14%;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  background: #17264c;
+  content: "";
+}
+
+.animated-scene .rainbow {
+  animation: rainbow-night 18s linear infinite;
+}
+
+@keyframes night-sky {
+  0%, 42%, 100% { opacity: 0; }
+  55%, 88% { opacity: 1; }
+}
+
+@keyframes sun-journey {
+  0% { left: -90%; top: 58%; opacity: 0; }
+  8% { left: -8%; top: 42%; opacity: 1; }
+  25% { left: 20%; top: 16%; opacity: 1; }
+  42% { left: 48%; top: 7%; opacity: 1; }
+  50% { left: 76%; top: 20%; opacity: 1; }
+  58%, 100% { left: 110%; top: 58%; opacity: 0; }
+}
+
+@keyframes moon-journey {
+  0%, 47%, 100% { right: -20%; top: 58%; opacity: 0; }
+  55% { right: -8%; top: 42%; opacity: 1; }
+  72% { right: 20%; top: 16%; opacity: 1; }
+  88% { right: 48%; top: 7%; opacity: 1; }
+  96% { right: 76%; top: 20%; opacity: 1; }
+  99% { right: 110%; top: 58%; opacity: 0; }
+}
+
+@keyframes rainbow-night {
+  0%, 42%, 100% { opacity: 1; }
+  55%, 88% { opacity: 0.35; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-scene .scene-background::after,
+  .animated-scene .sun,
+  .animated-scene .moon,
+  .animated-scene .rainbow 
+  }
+
+  .animated-scene .sun {
+    top: 12%;
+    left: 12%;
+    opacity: 1;
+  }
+}
